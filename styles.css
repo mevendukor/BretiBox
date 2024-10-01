@@ -196,7 +196,7 @@ p, h1, h2, h3, h4, h5, h6 {
     align-items: flex-start; /* Aligne les éléments en haut */
     flex-wrap: wrap; /* Permettre le retour à la ligne des éléments */
     gap: 0px; /* Espacement entre les éléments */
-    width: 8cm; /* Prend toute la largeur */
+    width: 9cm; /* Prend toute la largeur */
     margin: 0px auto 10px auto; /* Marge de 20px en haut, et centré horizontalement */
 }
 
@@ -212,7 +212,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .person-button img {
-    width: 40px; /* Ajustez la taille si nécessaire */
+    width: 45px; /* Ajustez la taille si nécessaire */
     height: 53px;
     object-fit: cover;
     transition: transform 0.3s ease;
@@ -241,8 +241,8 @@ p, h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
     gap: 18px 10px; /* Espace vertical de 18px et horizontal de 10px */
-    width: 8cm;
-    max-width: 8cm; /* Limite la largeur de la grille */
+    width: 9cm;
+    max-width: 9cm; /* Limite la largeur de la grille */
     margin: 0 auto; /* Marge automatique pour centrer la grille */
     overflow-y: scroll; /* Permettre le défilement vertical */
     max-height: 100vh; /* Limiter la hauteur à 80% de la hauteur de la vue */
