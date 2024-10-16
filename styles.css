@@ -162,7 +162,7 @@ p, h1, h2, h3, h4, h5, h6 {
     align-items: center; /* Centrer le texte à l'intérieur du bouton */
     text-align: center;
     padding: 5%; /* Espacement autour du texte */
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 /* Texte à l'intérieur du bouton */
