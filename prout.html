@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BretiBox - Devine Prout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <!-- Logo devenu texte stylisé -->
+<img src="images/logo_long.png" alt="Breti BOX Logo" class="logo-image" onclick="window.location.href='index.html'">
+        </div>
+
+        <div class="button-container">
+            <!-- Bouton Audio Aléatoire centré au milieu -->
+            <button id="proutButton" class="shuffle-button">Devine le prout Score : 0</button>
+        </div>
+
+        <div id="prout-grid" class="prout-grid">
+            <div>
+                <button id="CONSTANT" class="audio-button">Constant</button>
+            </div>
+            <div>
+                <button id="NOE" class="audio-button">Noé</button>
+            </div>
+            <div>
+                <button id="JUSTIN" class="audio-button"> Justin</button>
+            </div>
+            <div>
+                <button id="MEVEN" class="audio-button">Meven</button>
+            </div>
+        </div>
+
+        <div class="legal-text-container">
+            <h1 class="legal-text">
+                <span> V1 - Première version du jeu 💩</span>
+            </h1>
+        </div>
+    </div>
+
+    <script src="scriptprout.js"></script>
+</body>
+</html>

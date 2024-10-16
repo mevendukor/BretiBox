@@ -1,0 +1,409 @@
+/* Style de base */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #4A4A4A; /* Gris un peu plus clair */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    justify-content: top; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    height: 100%; /* Prend toute la hauteur de la page */
+    margin: 0 10px; /* Ajoute 10px de marge à droite et à gauche */
+}
+
+.logo-container {
+    text-align: center; /* Centrer le logo */
+    margin-top: 15px; /* Espace au-dessus du logo */
+    margin-bottom: 10px; /* Espace au-dessus du logo */
+}
+
+.logo-container img {
+    width: 7cm; /* Par défaut, l'image occupe 80% de la largeur (pour les petits écrans) */
+    max-width: 100%; /* Empêche l'image de dépasser du conteneur */
+    height: auto; /* Maintient les proportions de l'image */
+    display: block; /* Centre l'image */
+    margin: 0 auto; /* Centre l'image dans le conteneur */
+}
+
+/* Media query pour les écrans plus larges (PC) */
+@media (min-width: 768px) {
+    .logo-container img {
+         width: 15cm; /* Par défaut, l'image occupe 80% de la largeur (pour les petits écrans) */
+
+
+    }
+}
+.little-logo-container {
+    text-align: center;
+    margin : 10px 0 10px /* Centrer le logo */
+     /* Espace au-dessus du logo */
+}
+
+
+.legal-container {
+    text-align: center; /* Centrer le logo */
+    margin-top: 80px; /* Espace au-dessus du logo */
+}
+
+
+/* Conteneur du bouton */
+.button-container {
+    display: flex; /* Utilisation de Flexbox pour centrer le bouton */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: top; /* Centrer verticalement */
+        margin-bottom: 50px; /* Enlève la marge entre le bouton et la grille */
+
+}
+
+.long-button-container {
+    display: flex; /* Utilisation de Flexbox */
+    flex-direction: column; /* Disposer les boutons verticalement */
+    justify-content: center; /* Centrer verticalement dans le parent */
+    align-items: top; /* Centrer horizontalement */
+
+}
+
+
+
+
+/* Logo devenu texte stylisé */
+.logo-text {
+    font-family: 'Strong', sans-serif; /* Police similaire à Instagram */
+    font-size: 5rem; /* Police plus grande pour donner une apparence imposante */
+    font-weight: bolder; /* Police plus grasse */
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6); /* Ombre portée plus prononcée pour l'effet relief */
+    margin-bottom: 80px; /* Ajustement du placement */
+}
+
+.little-logo-text {
+    font-family: 'Strong', sans-serif; /* Police similaire à Instagram */
+    font-size: 2rem; /* Police plus grande pour donner une apparence imposante */
+    font-weight: bolder; /* Police plus grasse */
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Ombre portée plus prononcée pour l'effet relief */
+    line-height: 1
+    }
+
+    .little-logo-text:active {
+    transform: translateY(4px); /* Effet enfoncé plus prononcé */
+}
+
+
+
+
+/* Logo devenu texte stylisé */
+.legal-text-container {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+ .legal-text {
+    font-family: 'Strong', sans-serif; /* Police similaire à Instagram */
+    font-size: 12px; /* Police plus grande pour donner une apparence imposante */
+    text-align: center;
+    letter-spacing: 1px;
+    color: white /* Texte en blanc */
+}   
+
+
+/* Partie "Breti" en blanc */
+.breti {
+    color: #FFFFFF;
+    font-style: italic;
+}
+
+/* Partie "Box" en jaune cassé */
+.box {
+    color: #F5E050; /* Jaune cassé */
+    font-style: italic;
+}
+
+
+
+/* Bouton stylisé */
+.shuffle-button {
+    background-color: #F5F5F5; /* Blanc cassé */
+    border: none;
+    width: 7cm; /* Largeur du bouton */
+    height: 5cm; /* Hauteur du bouton */
+    font-size: calc(0.4 * (3.2cm / 1.5)); /* Ajustement basé sur 7cm */
+    font-family: 'Strong',  sans-serif;
+     font-weight: bold; /* Police pour le bouton */
+    border-radius: 10px; /* Bordure légèrement arrondie */
+    box-shadow: 0 8px #999; /* Relief plus prononcé */
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    display: center;
+    justify-content: center;
+    align-items: center; /* Centrer le texte à l'intérieur du bouton */
+    text-align: center;
+    padding: 5%; /* Espacement autour du texte */
+    margin-top: 120px;
+}
+
+/* Texte à l'intérieur du bouton */
+.shuffle-button span {
+    display: block;
+    text-transform: none; /* Pas de transformation du texte */
+    font-size: calc(0.8 * 7cm); /* Taille du texte adaptable */
+    line-height: 1.2; /* Ajustement de la hauteur de ligne */
+    margin: 0; /* Suppression des marges */
+}
+
+/* Effet d'enfoncement lors du clic */
+.shuffle-button:active {
+    box-shadow: 0 4px #666;
+    transform: translateY(4px); /* Effet enfoncé plus prononcé */
+}
+    /* Bouton stylisé */
+.long-button {
+    background-color: #F5F5F5; /* Blanc cassé */
+    border: none;
+    width: 7cm; /* Largeur du bouton */
+    height: 1.2cm; /* Hauteur du bouton */
+    font-size: calc(0.4 * (1.5cm / 1.5)); /* Ajustement basé sur 7cm */
+    font-family: 'Strong',  sans-serif;
+     font-weight: bold; /* Police pour le bouton */
+    border-radius: 10px; /* Bordure légèrement arrondie */
+    box-shadow: 0 8px #999; /* Relief plus prononcé */
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrer le texte à l'intérieur du bouton */
+    text-align: center;
+    padding: 0%; /* Espacement autour du texte */
+    margin : 10px
+}
+
+.score {
+    background-color: #FAF3DD; /* Jaune cassé */
+    color: #654321; /* Marron foncé pour le texte */
+    border: none;
+    width: 7cm; /* Largeur du bouton */
+    height: 1.2cm; /* Hauteur du bouton */
+    font-size: calc(0.4 * (1.5cm / 1.5)); /* Ajustement basé sur 7cm */
+    font-family: 'Strong', sans-serif;
+    font-weight: bold; /* Police pour le bouton */
+    border-radius: 10px; /* Bordure légèrement arrondie */
+    box-shadow: 0 8px #999; /* Relief plus prononcé */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrer le texte à l'intérieur du bouton */
+    text-align: center;
+    padding: 0%; /* Espacement autour du texte */
+    margin: 1rem;
+}
+
+
+/* Texte à l'intérieur du bouton */
+.long-button span {
+    display: block;
+    text-transform: none; /* Pas de transformation du texte */
+    font-size: calc(0.1 * (4cm / 1.5)); /* Taille du texte adaptable */
+    line-height: 1; /* Ajustement de la hauteur de ligne */
+    margin: 0; /* Suppression des marges */
+}
+
+/* Effet d'enfoncement lors du clic */
+.long-button:active {
+    box-shadow: 0 4px #666;
+    transform: translateY(4px); /* Effet enfoncé plus prononcé */
+}
+    
+
+
+.person-container {
+    display: flex;
+    justify-content: space-around; /* Espace entre les éléments */
+    align-items: flex-start; /* Aligne les éléments en haut */
+    flex-wrap: wrap; /* Permettre le retour à la ligne des éléments */
+    gap: 0px; /* Espacement entre les éléments */
+    width: 9cm; /* Prend toute la largeur */
+    margin: 0px auto 10px auto; /* Marge de 20px en haut, et centré horizontalement */
+}
+
+
+/* Style des boutons pour qu'ils aient la taille des images */
+.person-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+
+}
+
+.person-button img {
+    width: 45px; /* Ajustez la taille si nécessaire */
+    height: 53px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+
+}
+
+.person-button:active img {
+    transform: translateY(4px); /* Effet enfoncé plus prononcé */
+    filter: brightness(1.5); /* Ajustez la valeur selon vos besoins */
+    transition: filter 0.3s ease; /* Pour une transition douce */
+}
+
+/* Ajout d'une animation au survol */
+.person-button img:hover {
+    transform: scale(1.1);
+}
+
+.person-button:active {
+    transform: translateY(4px); /* Effet enfoncé plus prononcé */
+    
+}
+
+.audio-grid {
+    position: relative; /* Nécessaire pour le positionnement absolu de l'élément de texte */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+    gap: 18px 10px; /* Espace vertical de 18px et horizontal de 10px */
+    width: 9cm;
+    max-width: 9cm; /* Limite la largeur de la grille */
+    margin: 0 auto; /* Marge automatique pour centrer la grille */
+    overflow-y: scroll; /* Permettre le défilement vertical */
+    max-height: 100vh; /* Limiter la hauteur à 80% de la hauteur de la vue */
+    padding-bottom: 10px; /* Ajout d'un padding en bas pour éviter le tronquage */
+}
+
+.prout-grid {
+        display: flex; /* Utilisation de Flexbox pour centrer le bouton */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: top; /* Centrer verticalement */
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+    gap: 18px 10px; /* Espace vertical de 18px et horizontal de 10px */
+    width: 7cm;
+    max-width: 9cm; /* Limite la largeur de la grille */
+    margin: 0 auto; /* Marge automatique pour centrer la grille */
+    overflow-y: scroll; /* Permettre le défilement vertical */
+    max-height: 100vh; /* Limiter la hauteur à 80% de la hauteur de la vue */
+    padding-bottom: 10px; /* Ajout d'un padding en bas pour éviter le tronquage */
+}
+
+.grid-item {
+    background-color: none; /* Couleur de fond des éléments */
+    height: 100px; /* Hauteur des éléments */
+    display: flex; /* Utiliser Flexbox pour centrer le contenu */
+    align-items: center; /* Centrer verticalement */
+    justify-content: center; /* Centrer horizontalement */
+}
+
+
+.background-text {
+    position: absolute; /* Positionnement absolu pour couvrir toute la grille */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Strong', sans-serif; /* Police similaire à Instagram */
+    font-style: italic;
+    font-size: 2rem; /* Police plus grande pour donner une apparence imposante */
+    font-weight: bolder; /* Police plus grasse */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Alignement du texte au centre */
+    letter-spacing: 2px; /* Espacement entre les lettres */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Ombre portée plus prononcée pour l'effet relief */
+    line-height: 1; /* Hauteur de ligne */
+    z-index: 10; /* Positionnement devant le contenu de la grille */
+}
+
+
+/* Masquer la scrollbar pour Chrome, Safari et Edge */
+.audio-grid::-webkit-scrollbar {
+    display: none; /* Masquer la scrollbar */
+}
+
+/* Masquer la scrollbar pour Firefox */
+.audio-grid {
+    scrollbar-width: none; /* Firefox */
+}
+
+.prout-grid {
+    scrollbar-width: none; /* Firefox */
+}
+
+.audio-button {
+    background-color: #F5F5F5; /* Blanc cassé */
+    border: none;
+    width: 100%; /* Largeur du bouton */
+    height: 2cm; /* Hauteur du bouton */
+    font-size: calc(0.4 * (1.7cm / 1.5)); /* Ajustement basé sur 7cm */
+    font-family: 'Strong', sans-serif;
+    font-weight: bold; /* Police pour le bouton */
+    border-radius: 10px; /* Bordure légèrement arrondie */
+    box-shadow: 0 8px #999; /* Ombre prononcée */
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    display: flex; /* Utilisation de flex pour centrer le contenu */
+    justify-content: center; /* Centre horizontalement le texte */
+    align-items: center; /* Centre verticalement le texte */
+    text-align: center;
+    padding: 5; /* Pas d'espacement supplémentaire autour du texte */
+    margin: 0; /* Supprimer la marge en bas */
+}
+
+
+
+
+.audio-button:active {
+    box-shadow: 0 4px #666;
+    transform: translateY(4px); /* Effet enfoncé plus prononcé */
+}
+
+
+.hidden {
+    display: none;
+}
+
+#search-input {
+    background-color: #F5F5F5; /* Blanc cassé */
+    border: none;
+    width: 5cm; /* Largeur du bouton */
+    height: auto; /* Permet à la hauteur de s'ajuster automatiquement */
+    padding: 10px; /* Ajoute un espacement intérieur */
+    font-size: 16px; /* Taille de police fixe */
+    font-family: 'Strong', sans-serif;
+    font-weight: bold; /* Police pour le bouton */
+    border-radius: 10px; /* Bordure légèrement arrondie */
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    display: flex; /* Utilisation de flex pour centrer le contenu */
+    justify-content: center; /* Centre horizontalement le texte */
+    align-items: top; /* Centre verticalement le texte */
+    text-align: center;
+    margin-bottom : 15px
+}
+
+

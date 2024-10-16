@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BretiBox - Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="images/logo_long.png" alt="Breti BOX Logo" class="logo-image" onclick="window.location.href='index.html'">
+        </div>
+        <div class="person-container">
+            <button class="person-button" onclick="showFiles('JUSTIN')">
+                <img src="images/JUSTIN_button.png" alt="Justin">
+            </button>
+            <button class="person-button" onclick="showFiles('CONSTANT')">
+                <img src="images/CONSTANT_button.png" alt="Constant">
+            </button>
+            <button class="person-button" onclick="showFiles('NOE')">
+                <img src="images/NOE_button.png" alt="Noé">
+            </button>
+            <button class="person-button" onclick="showFiles('NICOLAS')">
+                <img src="images/NICOLAS_button.png" alt="Nicolas">
+            </button>
+            <button class="person-button" onclick="showFiles('MEVEN')">
+                <img src="images/MEVEN_button.png" alt="Meven">
+            </button>
+            <button class="person-button" onclick="showFiles('CORENTIN')">
+                <img src="images/CORENTIN_button.png" alt="Corentin">
+            </button>
+            <button class="person-button" onclick="showFiles('CLEMENT')">
+                <img src="images/CLEMENT_button.png" alt="Clement">
+            </button>
+        </div>
+        <!-- Grille pour afficher les fichiers audio -->
+            <div id="audio-grid" class="audio-grid">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+                <div class="background-text">Clique sur un BrétiPitchoune pour afficher ses audios ! </div>
+            </div>    
+
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
